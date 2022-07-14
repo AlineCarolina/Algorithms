@@ -1,4 +1,4 @@
-def anagram(str):
+def anagrams(str):
     anagram_dict = {}
     for char in str.lower():
         if char in anagram_dict:
@@ -11,6 +11,6 @@ def anagram(str):
 def is_anagram(first_string, second_string):
     if len(first_string) != len(second_string):
         return False
-    if anagram(first_string) != anagram(second_string):
+    if anagrams(first_string) != anagrams(second_string):
         return False
     return True
